@@ -4,6 +4,10 @@ Primary color(Dark Salmon Pink):#fe6860;
 Secondary Color(Light Pink):#ffe5e5;
 */
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffe5e5;
   font-family: "Montserrat", sans-serif;
@@ -14,11 +18,13 @@ body {
 }
 
 h1,h2,h3,h4 {
-  line-height: 1.4;
+  line-height: 1.6;
 }
+
 h1 {
   font-size: 1.75em;
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
@@ -34,22 +40,92 @@ h3 {
 h4 {
   font-size: 0.75em;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
+/*Space solution 1
+To add space before those element but not make it a general rule to not change content in About*/
+
+
+#role h2, h3 {
+  padding-top: 80px;
+  text-align: center;
+}
+
+#challenge h2, h3 {
+  padding-top: 80px;
+  text-align: center;
+}
+
+#tools h2, h3 {
+  padding-top: 80px;
+  text-align: center;
+}
+
+#skills h2, h3 {
+  padding-top: 80px;
+  text-align: center;
+}
+
+#process h2, h3 {
+  padding-top: 80px;
+  text-align: center;
+}
+
+#research h2, h3 {
+  padding-top: 80px;
+  text-align: center;
+}
+
+#users h2, h3 {
+  padding-top: 80px;
+  text-align: center;
+}
+
+#designing h2, h3 {
+  padding-top: 80px;
+  text-align: center;
+}
+
+#testing h2, h3 {
+  padding-top: 80px;
+  text-align: center;
+}
+
+/*End of spacing for h2 h3 in Perfect Properties
+
+Top margin solution for all h2 and h3 of main from Perfect properties
+Solution 2 follows
+
+.contentPP h2, h3 {
+  margin-top: 40px;
+  text-align: center;
+}
+*/
 
 img {
-  width: 100%
+  width: 600px;
+  margin: 0 auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 a {
-  color: #fe6860;
+  color: #4a4a4a;
+  text-decoration: underline;
+  text-align: center;
   text-decoration: none;
 }
 
 a:visited {
-  color: #551504;
+  color: #4a4a4a;
 }
-a:hover,
+a:hover {
+  color: white;
+}
+
 a:focus {
   color: #cc6540;
   text-decoration: underline;
@@ -60,9 +136,9 @@ a:active {
 
 .button {
   display: inline-block;
+  text-decoration: underline;
   background-color: #fe6860;
-  color: #ffffff;
-  font-weight: 400;
+  color: #4a4a4a;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
@@ -70,13 +146,189 @@ a:active {
 }
 
 .button.contact {
-  background-color: transparent;
-  color: #fe6860;
+  background-color: #ffe5e5;
+  text-decoration: underline;
+  color: #4a4a4a;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #4a4a4A;
+  margin: 10px;
 }
 
-.button.contact:hover{
+.button.contact:hover {
   background-color: #fe6860;
   color: #ffffff;
+  margin: 10px;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+#work .row {
+  margin: 25px 0;
+  border-bottom: 2px solid #ff7f50;
+  padding-bottom: 25px;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+#hero p {
+  text-align: center;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+header {
+  background-color: #fe6860;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  box-shadow: 0px 9px 10px -1px rgba(88, 52, 50, 0.31);
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+#hero {
+  background-color: #fe6860;
+  padding: 20px 0;
+}
+
+.social {
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px;
+  margin: 15px;
+}
+
+footer {
+  background-color: #fe6860;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+#about {
+  padding: 20px;
+}
+
+#perfectProperties {
+  padding: 20px;
+}
+
+/*
+.twoColumn {
+  width: 49%;
+  display: inline-block;
+  padding-bottom: 60px;
+}
+*/
+
+.twoColumn {
+columns: 80px 1;
+padding-right: 80px;
+padding-bottom: 60px;
+padding-top: 0px;
+display: inline-block;
+margin: 0 auto;
+}
+
+.button.cv {
+  display: inline-block;
+  background-color: #fe6860;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+  text-align: center;
+}
+
+.button.cv:hover {
+  color: #8B0000;
+}
+
+.button.cv:visited {
+  color: #4a4a4a;
+}
+
+.OverviewColumn {
+  float:left;
+  width: 33.33%;
+  padding: 10px 30px;
+}
+
+.twoScreensColumn {
+  float: left;
+  width: 50%;
+  padding: 30px;
+}
+
+.skills {
+  margin-top: 10px;
+}
+
+.introText {
+  margin-top: 30px;
+}
+
+.skillsToolsPP {
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+}
+
+.contentPP h1 {
+  margin-top: 60px;
+}
+
+.moodboardTitle h3 {
+  margin-top: 80px;
+}
+
+#skillsTools h2{
+  margin-top: 80px;
+}
+
+.caption {
+  text-align: center;
+  font-size: 12px;
+}
+
+.oneblockProblem {
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+
+.linkcentered {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: underline;
 }

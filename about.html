@@ -19,7 +19,7 @@
   <header>
 
     <div class="container">
-      <img src="img/logo.png" alt="Marion Marin's logo">
+      <img src="img/logo.png" class="logo" alt="Marion Marin's logo">
 
       <nav>
         <ul>
@@ -37,22 +37,22 @@
     <!--Title section-->
     <div class="section">
       <div class="container">
-        <h1>About Me</h1>
+        <h1 id="about">About Me</h1>
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id=photo>
 
       <div class="container">
         <picture>
           <source srcset="img/about/about_me@1x.jpg" media="(max-width:767px)">
-          <img src="img/about/about_me@2x.jpg" alt="Marion Marin">
+          <img src="img/about/about_me@2x.jpg" class="photo" alt="Marion Marin">
         </picture>
       </div>
     </div>
 
       <!--My Story and Skills & Tools Section-->
-      <div class="section">
+      <div class="section" id="contentAbout">
 
         <!--My Story column-->
         <div class="container">
@@ -70,14 +70,16 @@
                 I'm based in Berlin, Germany.
                 I speak French (native), English, Spanish and German.
               </p>
-              <a href="files/cv.pdf" target="_blank">See my CV</a>
+              <div class="linkcentered">
+              <a href="files/cv.pdf" class="button cv" target="_blank">See my CV</a>
+            </div>
             </div>
 
             <!--Skills & Tools column-->
-            <div class="column">
+            <div class="column" id=skillsTools>
               <h2>Skills & Tools</h2>
-              <div class="row">
-                <div class="column">
+              <div class="row" >
+                <div class="twoColumn">
                   <h3>Relevant Skills</h3>
                   <ul>
                     <li>User Research</li>
@@ -94,9 +96,9 @@
                   </ul>
                 </div>
 
-                <div class="column">
+                <div class="twoColumn">
                   <h3>Tools I use</h3>
-                  <ul>
+                  <ul class="toolsNames">
                     <li>Balsamiq</li>
                     <li>Sketch</li>
                     <li>Adobe XD</li>
@@ -129,7 +131,7 @@
         <br>Prefer sending an email?
       </p>
       <div class="row">
-        <a href="mailto:marioneudoxiemarin@gmail.com">Email me</a>
+        <a href="mailto:marioneudoxiemarin@gmail.com" class="button contact">Email me</a>
       </div>
 
       <!--Social Media Layout and Placeholders-->

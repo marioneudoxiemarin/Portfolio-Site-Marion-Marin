@@ -7,7 +7,7 @@
   <meta name="author" content="Marion Marin">
   <meta name="description" content="About Page of Marion Marin's Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Marion Marin</title>
+  <title>Perfect Properties</title>
   <script src="https://kit.fontawesome.com/bd23995610.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
   <header>
 
     <div class="container">
-      <img src="img/logo.png" alt="Marion Marin's logo">
+      <img src="img/logo.png" class="logo" alt="Marion Marin's logo">
 
       <nav>
         <ul>
@@ -32,16 +32,16 @@
     </div>
   </header>
 
-  <main>
+  <main class="contentPP">
 
     <!--Introduction-->
-    <div class="section">
+    <div class="section" id="perfectProperties">
       <div class="container">
         <h1>Perfect Properties</h1>
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="introduction">
       <div class="container">
         <picture>
           <source srcset="img/perfect-properties/1.introduction/overview@1x.png" media="(max-width:767px)">
@@ -49,7 +49,7 @@
         </picture>
 
         <div class="row">
-          <p>
+          <p class="introText">
             The idea of this project is to bring something new to real
             estate apps.
             My goal was to find what is useful for users. What could be
@@ -63,7 +63,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="role">
       <div class="container">
         <h2>My Role</h2>
         <div class="row">
@@ -76,7 +76,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="challenge">
       <div class="container">
         <h2>The Challenge</h2>
         <div class="row">
@@ -92,38 +92,42 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="tools">
       <div class="container">
         <h2>Tools Used</h2>
         <div class="row">
-          <ul>
-            <li>Sketch (design and prototyping)</li>
-            <li>Invision (prototyping and testing</li>
-          </ul>
+          <div class="column">
+            <ul class="skillsToolsPP">
+              <li>Sketch (design and prototyping)</li>
+              <li>Invision (prototyping and testing</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="skills">
       <div class="container">
         <h2>Skills</h2>
         <div class="row">
-          <ul>
-            <li>Competitive Analysis</li>
-            <li>Interviews</li>
-            <li>User Research Analysis</li>
-            <li>User Personas</li>
-            <li>User Journeys</li>
-            <li>User Flows</li>
-            <li>Usability Testing</li>
-            <li>Design Guidelines</li>
-          </ul>
+          <div class="column">
+            <ul class="skillsToolsPP">
+              <li>Competitive Analysis</li>
+              <li>Interviews</li>
+              <li>User Research Analysis</li>
+              <li>User Personas</li>
+              <li>User Journeys</li>
+              <li>User Flows</li>
+              <li>Usability Testing</li>
+              <li>Design Guidelines</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
     <!--My Design Process-->
-    <div class="section">
+    <div class="section" id="process">
       <h1>My Design Process</h1>
       <div class="container">
         <picture>
@@ -135,7 +139,7 @@
 
     <!--Research-->
 
-    <div class="section">
+    <div class="section" id="research">
       <div class="container">
         <h2>RESEARCH</h2>
         <h3>Concept</h3>
@@ -144,8 +148,7 @@
             class salaries, in their 30s/40s, who want to invest for
             additional income or more financial security</li>
           <li>Competition: there are a lot of different apps / websites
-            which feature offers of properties to buy or rent
-          <li>
+            which feature offers of properties to buy or rent</li>
           <li>Risk: how to establish our app in a market where they are
             a lot of other similar products</li>
           <li>Opportunity: focusing on buyers only is different from
@@ -184,7 +187,7 @@
           </picture>
         </div>
 
-        <p>
+        <p class="caption">
           The platforms Trulia and Zillow
         </p>
 
@@ -192,7 +195,7 @@
     </div>
 
     <!--Who are the users?-->
-    <div class="section">
+    <div class="section" id="users">
       <div class="container">
         <h2>WHO ARE THE USERS?</h2>
         <h3>User Persona</h3>
@@ -231,26 +234,32 @@
     </div>
 
     <!--Designing-->
-    <div class="section">
+    <div class="section" id="designing">
       <div class="container">
         <h2>DESIGNING</h2>
         <h3>Low-Fidelity Wireframes</h3>
 
         <div class="row">
-          <picture>
-            <source srcset="img/perfect-properties/4.designing/low_fidelity/dashboard@1x.jpg" media="(max-width:767px)">
-            <img src="img/perfect-properties/4.designing/low_fidelity/dashboard@2x.jpg" alt="Low-fidelity Wireframes for the Dashboard screen">
-          </picture>
+          <div class="OverviewColumn">
+            <picture>
+              <source srcset="img/perfect-properties/4.designing/low_fidelity/dashboard@1x.jpg" media="(max-width:767px)">
+              <img src="img/perfect-properties/4.designing/low_fidelity/dashboard@2x.jpg" alt="Low-fidelity Wireframes for the Dashboard screen">
+            </picture>
+          </div>
 
-          <picture>
-            <source srcset="img/perfect-properties/4.designing/low_fidelity/filters@1x.jpg" media="(max-width:767px)">
-            <img src="img/perfect-properties/4.designing/low_fidelity/filters@2x.jpg" alt="Low-fidelity Wireframes for the Filters screenn">
-          </picture>
+          <div class="OverviewColumn">
+            <picture>
+              <source srcset="img/perfect-properties/4.designing/low_fidelity/filters@1x.jpg" media="(max-width:767px)">
+              <img src="img/perfect-properties/4.designing/low_fidelity/filters@2x.jpg" alt="Low-fidelity Wireframes for the Filters screenn">
+            </picture>
+          </div>
 
-          <picture>
-            <source srcset="img/perfect-properties/4.designing/low_fidelity/description@1x.jpg" media="(max-width:767px)">
-            <img src="img/perfect-properties/4.designing/low_fidelity/description@2x.jpg" alt="Low-fidelity Wireframes for the Description screen">
-          </picture>
+          <div class="OverviewColumn">
+            <picture>
+              <source srcset="img/perfect-properties/4.designing/low_fidelity/description@1x.jpg" media="(max-width:767px)">
+              <img src="img/perfect-properties/4.designing/low_fidelity/description@2x.jpg" alt="Low-fidelity Wireframes for the Description screen">
+            </picture>
+          </div>
         </div>
 
         <h3>Inspiration Moodboard</h3>
@@ -262,20 +271,26 @@
         <h3>Mid-Fidelity Wireframes</h3>
 
         <div class="row">
+          <div class="OverviewColumn">
           <picture>
             <source srcset="img/perfect-properties/4.designing/mid_fidelity/dashboard@1x.jpg" media="(max-width:767px)">
             <img src="img/perfect-properties/4.designing/mid_fidelity/dashboard@2x.jpg" alt="Mid-fidelity Wireframes for the Dashboard screen">
           </picture>
+        </div>
 
+  <div class="OverviewColumn">
           <picture>
             <source srcset="img/perfect-properties/4.designing/mid_fidelity/filters@1x.jpg" media="(max-width:767px)">
             <img src="img/perfect-properties/4.designing/mid_fidelity/filters@2x.jpg" alt="Mid-fidelity Wireframes for the Filters screen">
           </picture>
+        </div>
 
+  <div class="OverviewColumn">
           <picture>
             <source srcset="img/perfect-properties/4.designing/mid_fidelity/description@1x.jpg" media="(max-width:767px)">
             <img src="img/perfect-properties/4.designing/mid_fidelity/description@2x.jpg" alt="Mid-fidelity Wireframes for the Description screen">
           </picture>
+</div>
 
           <h3>Responsive Design</h3>
           <picture>
@@ -284,7 +299,7 @@
           </picture>
         </div>
 
-        <p>
+        <p class="caption">
           Final visuals of the product (for mobile, tablet and desktop)
         </p>
 
@@ -293,7 +308,9 @@
           <source srcset="img/perfect-properties/4.designing/style_guide@1x.jpg" media="(max-width:767px)">
           <img src="img/perfect-properties/4.designing/style_guide@2x.jpg" alt="A look at the Style Guide">
         </picture>
+        <div class="linkcentered">
         <a href="files/style_guide.pdf" target="_blank">See the Full Style Guide</a>
+      </div>
 
         <h3>Important Elements of the Design</h3>
         <ul>
@@ -305,7 +322,7 @@
             around them (schools, restaurants, groceries store...)</li>
           <li>The possibility to add a property to the favorites in one
             click</li>
-          <li>ooking of a visit in a few clicks</li>
+          <li>Booking of a visit in a few clicks</li>
           <li>An overview of the steps to make to sign for a property</li>
         </ul>
 
@@ -313,7 +330,7 @@
     </div>
 
     <!--Usability Testing-->
-    <div class="section">
+    <div class="section" id="testing">
       <div class="container">
         <h2>USABILITY TESTING</h2>
         <h3>Problems and Solutions</h3>
@@ -331,99 +348,126 @@
           the mobile app was tested since I followed a mobile-first
           approach.
         </p>
+          <br>
 
         <div class="row">
+            <div class="OverviewColumn">
           <picture>
             <source srcset="img/perfect-properties/4.designing/low_fidelity/dashboard@1x.jpg" media="(max-width:767px)">
             <img src="img/perfect-properties/4.designing/low_fidelity/dashboard@2x.jpg" alt="Low-fidelity Wireframes for the Dashboard screen">
           </picture>
+        </div>
 
+  <div class="OverviewColumn">
           <picture>
             <source srcset="img/perfect-properties/4.designing/mid_fidelity/dashboard@1x.jpg" media="(max-width:767px)">
             <img src="img/perfect-properties/4.designing/mid_fidelity/dashboard@2x.jpg" alt="Mid-fidelity Wireframes for the Dashboard screen">
           </picture>
+        </div>
 
+  <div class="OverviewColumn">
           <picture>
             <source srcset="img/perfect-properties/5.usability_testing/problem_1/high-fi_dashboard@1x.jpg" media="(max-width:767px)">
             <img src="img/perfect-properties/5.usability_testing/problem_1/high-fi_dashboard@2x.jpg" alt="High-fidelity Wireframes for the Dashboard screen">
           </picture>
         </div>
+      </div>
 
-        <p>
+        <p class="caption">
           Evolution of the Dashboard Screen
         </p>
 
-        <p>
-          PROBLEM: The users felt the price was not too visible
-          SOLUTION: The visual part of the main page was rethought
+        <p class="oneblockProblem">
+          <b>PROBLEM</b>: The users felt the price was not too visible
+          <br>
+          <b>SOLUTION</b>: The visual part of the main page was rethought
           with an emphasis on the price (bold and bigger than the
           rest of the text)
-          Evolution
         </p>
 
+
         <div class="row">
+            <div class="OverviewColumn">
           <picture>
             <source srcset="img/perfect-properties/4.designing/low_fidelity/filters@1x.jpg" media="(max-width:767px)">
             <img src="img/perfect-properties/4.designing/low_fidelity/filters@2x.jpg" alt="Low-fidelity Wireframes for the Filters screenn">
           </picture>
+        </div>
 
+  <div class="OverviewColumn">
           <picture>
             <source srcset="img/perfect-properties/4.designing/mid_fidelity/filters@1x.jpg" media="(max-width:767px)">
             <img src="img/perfect-properties/4.designing/mid_fidelity/filters@2x.jpg" alt="Mid-fidelity Wireframes for the Filters screen">
           </picture>
+        </div>
 
+  <div class="OverviewColumn">
           <picture>
             <source srcset="img/perfect-properties/5.usability_testing/problem_2/high-fi_filters@1x.jpg" media="(max-width:767px)">
             <img src="img/perfect-properties/5.usability_testing/problem_2/high-fi_filters@2x.jpg" alt="High-fidelity Wireframes for the Filters screenn">
           </picture>
         </div>
+</div>
 
-        <p>
+        <p class="caption">
           Evolution of the filters screens (left to right)
         </p>
 
-        <p>
-          PROBLEM: The users felt like some filters were not needed
+        <p class="oneblockProblem">
+          <b>PROBLEM</b>: The users felt like some filters were not needed
           at this stage (neighborhood rating, financial filters)
-          SOLUTION: Based on the users comments, I lowered the
+          <br>
+          <b>SOLUTION</b>: Based on the users comments, I lowered the
           number of filters removing the neighborhood and school
           ratings (which are still visible on the map for each property
           (see next screens). I also removed the financial aids filters as
           it seems that the users would prefer external help (bank,
           friends and family, advisors) to determine if a property is
           worth the investment.
-          PROBLEM: It was important for the users to know which
+          <br>
+          <br>
+          <b>PROBLEM</b>: It was important for the users to know which
           kind of parking was available and to know how many cars
           the garage could fit.
-          SOLUTION: It was added to the filters.
+          <br>
+          <b>SOLUTION</b>: It was added to the filters.
         </p>
+        <br>
 
         <div class="row">
+            <div class="OverviewColumn">
           <picture>
             <source srcset="img/perfect-properties/4.designing/low_fidelity/description@1x.jpg" media="(max-width:767px)">
             <img src="img/perfect-properties/4.designing/low_fidelity/description@2x.jpg" alt="Low-fidelity Wireframes for the Description screen">
           </picture>
+        </div>
 
+  <div class="OverviewColumn">
           <picture>
             <source srcset="img/perfect-properties/4.designing/mid_fidelity/description@1x.jpg" media="(max-width:767px)">
             <img src="img/perfect-properties/4.designing/mid_fidelity/description@2x.jpg" alt="Mid-fidelity Wireframes for the Description screen">
           </picture>
+        </div>
 
+  <div class="OverviewColumn">
           <picture>
             <source srcset="img/perfect-properties/5.usability_testing/problem_4/high-fi_description@1x.jpg" media="(max-width:767px)">
             <img src="img/perfect-properties/5.usability_testing/problem_4/high-fi_description@2x.jpg" alt="High-fidelity Wireframes for the Description screen">
           </picture>
         </div>
+      </div>
+      <br>
 
-        <p>Evolution of the property description screens (from left to
+        <p class="caption">Evolution of the property description screens (from left to
           right)
         </p>
 
-        <p>
-          PROBLEM : The users felt there was a lot of information on
+        <p class="oneblockProblem">
+          <b>PROBLEM</b> : The users felt there was a lot of information on
           one page and that the important elements were not
           highlighted enough.
-          SOLUTION: The information is now presented on two
+          <br>
+          <b>SOLUTION</b>: The information is now presented on two
           different screens ("description" and "map"). The
           "description" screen show the important elements of the
           property like the filters, a description, the option to book a
@@ -434,32 +478,38 @@
         </p>
 
         <div class="row">
+            <div class="twoScreensColumn">
           <picture>
-            <source srcset="img/perfect-properties/5.usability_testing/problem_5/mi-fi_date_selection@1x.jpg" media="(max-width:767px)">
+            <source srcset="img/perfect-properties/5.usability_testing/problem_5/mid-fi_date_selection@1x.jpg" media="(max-width:767px)">
             <img src="img/perfect-properties/5.usability_testing/problem_5/mid-fi_date_selection@2x.jpg" alt="Mid-fidelity Wireframes for the Date Selection screen">
           </picture>
+        </div>
 
+  <div class="twoScreensColumn">
           <picture>
             <source srcset="img/perfect-properties/5.usability_testing/problem_5/high-fi_date_selection@1x.jpg" media="(max-width:767px)">
             <img src="img/perfect-properties/5.usability_testing/problem_5/high-fi_date_selection@2x.jpg" alt="High-fidelity Wireframes for the Date Selection screen">
           </picture>
         </div>
-
-        <p>
+      </div>
+<br>
+        <p class="caption">
           Evolution of the booking screens (from left to right)
         </p>
 
-        <p>
-          PROBLEM: During the testing, it was noted that if a lot of
+        <p class="oneblockProblem">
+          <b>PROBLEM</b>: During the testing, it was noted that if a lot of
           dates and time slots are available, the first version of the
           design would not be user friendly (it will be a long list of
           availabilities).
-          SOLUTION: Now, the user selects the date and a dropdown
+          <br>
+          <b>SOLUTION</b>: Now, the user selects the date and a dropdown
           appears will the time slots available.
         </p>
 
-        <a href="https://projects.invisionapp.com/share/NKXW7INU2E3#/screens" target="_blank">See the interactive prototype</a>
-
+<div class="linkcentered">
+        <a href="https://projects.invisionapp.com/share/NKXW7INU2E3#/screens" class="linkcentered" target="_blank">See the interactive prototype</a>
+</div>
       </div>
     </div>
 
@@ -475,7 +525,7 @@
         <br>Prefer sending an email?
       </p>
       <div>
-        <a href="mailto:marioneudoxiemarin@gmail.com">Email me</a>
+        <a href="mailto:marioneudoxiemarin@gmail.com" class="button contact">Email me</a>
       </div>
 
       <!--Social Media Layout and Placeholders-->
