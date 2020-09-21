@@ -30,10 +30,11 @@ h1 {
 h2 {
   font-size: 1.35em;
   font-weight: 700;
+  text-align: center;
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1.15em;
   font-weight: 700;
 }
 
@@ -42,66 +43,6 @@ h4 {
   font-weight: 700;
   margin-bottom: 10px;
 }
-
-/*Space solution 1
-To add space before those element but not make it a general rule to not change content in About*/
-
-
-#role h2, h3 {
-  padding-top: 80px;
-  text-align: center;
-}
-
-#challenge h2, h3 {
-  padding-top: 80px;
-  text-align: center;
-}
-
-#tools h2, h3 {
-  padding-top: 80px;
-  text-align: center;
-}
-
-#skills h2, h3 {
-  padding-top: 80px;
-  text-align: center;
-}
-
-#process h2, h3 {
-  padding-top: 80px;
-  text-align: center;
-}
-
-#research h2, h3 {
-  padding-top: 80px;
-  text-align: center;
-}
-
-#users h2, h3 {
-  padding-top: 80px;
-  text-align: center;
-}
-
-#designing h2, h3 {
-  padding-top: 80px;
-  text-align: center;
-}
-
-#testing h2, h3 {
-  padding-top: 80px;
-  text-align: center;
-}
-
-/*End of spacing for h2 h3 in Perfect Properties
-
-Top margin solution for all h2 and h3 of main from Perfect properties
-Solution 2 follows
-
-.contentPP h2, h3 {
-  margin-top: 40px;
-  text-align: center;
-}
-*/
 
 img {
   width: 600px;
@@ -116,7 +57,6 @@ a {
   color: #4a4a4a;
   text-decoration: underline;
   text-align: center;
-  text-decoration: none;
 }
 
 a:visited {
@@ -136,9 +76,11 @@ a:active {
 
 .button {
   display: inline-block;
-  text-decoration: underline;
+  text-decoration: none;
   background-color: #fe6860;
-  color: #4a4a4a;
+  color: #ffffff !important;
+  width: 100%;
+  max-width: 320px;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
@@ -146,11 +88,12 @@ a:active {
 }
 
 .button.contact {
-  background-color: #ffe5e5;
-  text-decoration: underline;
+  background-color: #4a4a4a;
+  text-decoration: none;
   color: #4a4a4a;
   text-transform: uppercase;
-  border: 2px solid #4a4a4A;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
   margin: 10px;
 }
 
@@ -160,6 +103,26 @@ a:active {
   margin: 10px;
 }
 
+.button.cv {
+  display: inline-block;
+  background-color: #fe6860;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+  text-align: center;
+}
+
+.button.cv:hover {
+  color: #8B0000;
+}
+
+.button.cv:visited {
+  color: #4a4a4a;
+}
+
 /* Layout styling */
 
 .container {
@@ -167,26 +130,8 @@ a:active {
   margin: 0 auto;
 }
 
-#work .row {
-  margin: 25px 0;
-  border-bottom: 2px solid #ff7f50;
-  padding-bottom: 25px;
-}
-
-#hero h1 {
-  text-align: center;
-}
-
-#hero p {
-  text-align: center;
-}
-
-#contact h2 {
-  text-align: center;
-}
-
 .logo {
-  max-width: 250px;
+  max-width: 80px;
 }
 
 header {
@@ -210,12 +155,8 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
-}
-
-#hero {
-  background-color: #fe6860;
-  padding: 20px 0;
+  color: #ffffff !important;
+  text-decoration: none;
 }
 
 .social {
@@ -225,76 +166,16 @@ nav > ul > li > a {
   margin: 15px;
 }
 
+.social > a {
+  color: #ffffff;
+}
+
 footer {
   background-color: #fe6860;
+  color: #ffffff;
   text-align: center;
   font-size: 14px;
   padding: 20px;
-  margin-top: 30px;
-}
-
-#about {
-  padding: 20px;
-}
-
-#perfectProperties {
-  padding: 20px;
-}
-
-/*
-.twoColumn {
-  width: 49%;
-  display: inline-block;
-  padding-bottom: 60px;
-}
-*/
-
-.twoColumn {
-columns: 80px 1;
-padding-right: 80px;
-padding-bottom: 60px;
-padding-top: 0px;
-display: inline-block;
-margin: 0 auto;
-}
-
-.button.cv {
-  display: inline-block;
-  background-color: #fe6860;
-  color: #ffffff;
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30;
-  transition: 0.2s opacity;
-  text-align: center;
-}
-
-.button.cv:hover {
-  color: #8B0000;
-}
-
-.button.cv:visited {
-  color: #4a4a4a;
-}
-
-.OverviewColumn {
-  float:left;
-  width: 33.33%;
-  padding: 10px 30px;
-}
-
-.twoScreensColumn {
-  float: left;
-  width: 50%;
-  padding: 30px;
-}
-
-.skills {
-  margin-top: 10px;
-}
-
-.introText {
   margin-top: 30px;
 }
 
@@ -304,26 +185,9 @@ margin: 0 auto;
   padding: 10px;
 }
 
-.contentPP h1 {
-  margin-top: 60px;
-}
-
-.moodboardTitle h3 {
-  margin-top: 80px;
-}
-
-#skillsTools h2{
-  margin-top: 80px;
-}
-
 .caption {
   text-align: center;
   font-size: 12px;
-}
-
-.oneblockProblem {
- padding-top: 20px;
- padding-bottom: 20px;
 }
 
 .linkcentered {
@@ -331,4 +195,33 @@ margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
   text-decoration: underline;
+}
+
+.textcentered {
+  text-align: center;
+}
+
+.rowbutton {
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #fe6860;
+  margin-bottom: 25px;
+}
+
+.projects h1 {
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+.projects h2 {
+  padding-top: 35px;
+}
+
+.projects h3 {
+  padding-top: 35px;
+  text-align: center;
+}
+
+.column {
+  margin-bottom: 20px;
 }
