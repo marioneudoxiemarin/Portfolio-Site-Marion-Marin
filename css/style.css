@@ -48,8 +48,6 @@ img {
   width: 600px;
   margin: 0 auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
 }
 
@@ -84,7 +82,12 @@ a:active {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
 }
 
 .button.contact {
@@ -113,6 +116,7 @@ a:active {
   border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .button.cv:hover {
@@ -170,6 +174,36 @@ nav > ul > li > a {
   color: #ffffff;
 }
 
+div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersOut a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersOut a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 footer {
   background-color: #fe6860;
   color: #ffffff;
@@ -188,6 +222,7 @@ footer {
 .caption {
   text-align: center;
   font-size: 12px;
+  padding-bottom: 20px;
 }
 
 .linkcentered {
@@ -224,4 +259,174 @@ footer {
 
 .column {
   margin-bottom: 20px;
+}
+
+.hero {
+  background-color: #fe6860;
+  color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.trulia {
+  padding-top: 40px;
+}
+
+.row.problem {
+  padding-top: 60px;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation-duration: 34s;
+  animation-name: cloud-move-reverse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    float: right;
+  }
+
+  img {
+    margin: unset;
+    display: inline-block;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+.hero span {
+  display: block;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-4 {
+  width: 33.33%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding-right: 18px;
+  padding-left: 18px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.skills-row {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rowbutton {
+  border-bottom: none;
+}
+.work .row {
+  border-bottom: 2px solid #fe6860;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.width300-img {
+  max-width: 300px;
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+.col-lg-8 {
+  width: 66.66%;
+}
+
+.col-lg-7 {
+  width: 58.33%;
+}
+
+.col-lg-4 {
+  width: 33.33%;
+}
+
+.col-lg-5 {
+  width: 41.66%;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.design-process {
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+}
+
+.photo {
+  max-width: 600px;
+}
+
+.photo-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
