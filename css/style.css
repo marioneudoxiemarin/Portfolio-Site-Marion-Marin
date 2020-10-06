@@ -3,8 +3,7 @@ Colors used:
 Primary color(Dark Salmon Pink):#fe6860;
 Secondary Color(Light Pink):#ffe5e5;
 */
-
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -17,7 +16,7 @@ body {
   color: #4a4a4a
 }
 
-h1,h2,h3,h4 {
+h1, h2, h3, h4 {
   line-height: 1.6;
 }
 
@@ -53,23 +52,23 @@ img {
 
 a {
   color: #4a4a4a;
-  text-decoration: underline;
   text-align: center;
 }
 
 a:visited {
   color: #4a4a4a;
 }
+
 a:hover {
   color: white;
 }
 
 a:focus {
-  color: #cc6540;
-  text-decoration: underline;
+  color: white;
 }
+
 a:active {
-  color:#994c30;
+  color: #994c30;
 }
 
 .button {
@@ -97,7 +96,7 @@ a:active {
   text-transform: uppercase;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .button.contact:hover {
@@ -128,7 +127,6 @@ a:active {
 }
 
 /* Layout styling */
-
 .container {
   padding: 0 10px;
   margin: 0 auto;
@@ -142,25 +140,39 @@ header {
   background-color: #fe6860;
   text-align: center;
   padding: 10px 0;
-  position: relative;
+  position: fixed;
+  width: 100%;
   box-shadow: 0px 9px 10px -1px rgba(88, 52, 50, 0.31);
 }
 
-nav > ul {
+main {
+  padding-top: 88px;
+}
+
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #ffffff !important;
   text-decoration: none;
+}
+
+.black-border {
+  border: 2px solid #000;
+  padding: 20px 20px 20px 50px;
+}
+
+.about-page h3 {
+  text-align: center;
 }
 
 .social {
@@ -170,38 +182,8 @@ nav > ul > li > a {
   margin: 15px;
 }
 
-.social > a {
+.social>a {
   color: #ffffff;
-}
-
-div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
-{
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-}
-
-div.topBotomBordersOut a:before
-{
-    top: 0px;
-    transform: translateY(10px);
-}
-
-div.topBotomBordersOut a:after
-{
-    bottom: 0px;
-    transform: translateY(-10px);
-}
-
-div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
-{
-    opacity: 1;
-    transform: translateY(0px);
 }
 
 footer {
@@ -257,6 +239,10 @@ footer {
   text-align: center;
 }
 
+.project ul {
+  padding-left: 20px;
+}
+
 .column {
   margin-bottom: 20px;
 }
@@ -277,8 +263,13 @@ footer {
 }
 
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -290,8 +281,13 @@ footer {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -303,8 +299,13 @@ footer {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
@@ -318,7 +319,6 @@ footer {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
@@ -337,96 +337,144 @@ Medium devices (640px and larger)
     font-size: 18px;
   }
 
-.hero span {
-  display: block;
-}
+  .hero span {
+    display: block;
+  }
 
-.col-md-6 {
-  width: 50%;
-}
+  .col-md-6 {
+    width: 50%;
+  }
 
-.col-md-4 {
-  width: 33.33%;
-}
+  .col-md-4 {
+    width: 33.33%;
+  }
 
-[class*="col-"] {
-  float: left;
-  padding-right: 18px;
-  padding-left: 18px;
-}
+  .col-md-12 {
+    width: 100%;
+  }
 
-.row::after {
+  [class*="col-"] {
+    float: left;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .skills-row {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rowbutton {
+    border-bottom: none;
+  }
+
+  .work .row {
+    border-bottom: 2px solid #fe6860;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .width300-img {
+    max-width: 300px;
+  }
+
+  .photo {
+    max-width: 400px;
+  }
+
+  .photo-container {
+    text-align: center;
+  }
+
+  .black-border {
+    border: none;
+  }
+
+  nav ul li {
+    position: relative;
+    padding: 10px 15px;
+  }
+
+ul.borders-out a:before, ul.borders-out a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #FFF;
   content: "";
-  clear: both;
-  display: table;
+  opacity: 0;
+  transition: all 0.3s;
 }
 
-.skills-row {
-  margin-left: auto;
-  margin-right: auto;
+ul.borders-out a:before {
+  top: 0px;
+  transform: translateY(10px);
 }
 
-.rowbutton {
-  border-bottom: none;
-}
-.work .row {
-  border-bottom: 2px solid #fe6860;
-  padding-top: 40px;
-  padding-bottom: 40px;
+ul.borders-out a:after {
+  bottom: 0px;
+  transform: translateY(-10px);
 }
 
-.width300-img {
-  max-width: 300px;
+ul.borders-out a:hover:before, ul.borders-out a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .col-lg-8 {
+    width: 66.66%;
+  }
 
-.col-lg-8 {
-  width: 66.66%;
-}
+  .col-lg-7 {
+    width: 58.33%;
+  }
 
-.col-lg-7 {
-  width: 58.33%;
-}
+  .col-lg-4 {
+    width: 33.33%;
+  }
 
-.col-lg-4 {
-  width: 33.33%;
-}
+  .col-lg-5 {
+    width: 41.66%;
+  }
 
-.col-lg-5 {
-  width: 41.66%;
-}
+  .col-lg-12 {
+    width: 100%;
+  }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.design-process {
-  max-width: 800px;
-  margin: 0 auto;
-  display: block;
-}
-
-.photo {
-  max-width: 600px;
-}
-
-.photo-container {
-    display: block;
+  .container {
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
   }
-}
+
+  .design-process {
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .photo {
+    max-width: 500px;
+  }
+
+  .about-page h3 {
+    text-align: left;
+  }
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
