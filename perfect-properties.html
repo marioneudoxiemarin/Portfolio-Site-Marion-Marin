@@ -19,19 +19,21 @@
   <header>
 
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
-        <img src="img/logo.png" class="logo" alt="Marion Marin's logo">
-      </a>
-
+      <img src="img/logo.png" class="logo" alt="Marion Marin's logo">
+    </a>
       <nav>
         <ul class="borders-out">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
-
     </div>
+  </div>
+
   </header>
 
   <main>
@@ -102,26 +104,6 @@
             <ul>
               <li>Sketch (design and prototyping)</li>
               <li>Invision (prototyping and testing</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="row">
-          <div class="column">
-            <ul>
-              <li>Competitive Analysis</li>
-              <li>Interviews</li>
-              <li>User Research Analysis</li>
-              <li>User Personas</li>
-              <li>User Journeys</li>
-              <li>User Flows</li>
-              <li>Usability Testing</li>
-              <li>Design Guidelines</li>
             </ul>
           </div>
         </div>
@@ -201,10 +183,12 @@
       <div class="container">
         <h2>WHO ARE THE USERS?</h2>
         <h3>User Persona</h3>
+        <div class="photo-container">
         <picture>
           <source srcset="img/perfect-properties/3.who_are_the_users/user_persona@1x.jpg" media="(max-width:767px)">
-          <img src="img/perfect-properties/3.who_are_the_users/user_persona@2x.jpg" alt="User Persona description">
+          <img src="img/perfect-properties/3.who_are_the_users/user_persona@2x.jpg" class="width-800px" alt="User Persona description">
         </picture>
+      </div>
         <h3>User Stories</h3>
 
         <ul>
@@ -308,10 +292,12 @@
         </div>
 
         <h3>Style Guide</h3>
+        <div class="photo-container">
         <picture>
           <source srcset="img/perfect-properties/4.designing/style_guide@1x.jpg" media="(max-width:767px)">
-          <img src="img/perfect-properties/4.designing/style_guide@2x.jpg" alt="A look at the Style Guide">
+          <img src="img/perfect-properties/4.designing/style_guide@2x.jpg" class="width-800px" alt="A look at the Style Guide">
         </picture>
+      </div>
 
         <div class="linkcentered">
           <a href="files/style_guide.pdf" target="_blank">See the Full Style Guide</a>
@@ -566,10 +552,9 @@
 
   </footer>
 
-  <script
-    src="https://code.jquery.com/jquery-migrate-3.3.1.min.js"
-    integrity="sha256-APllMc0V4lf/Rb5Cz4idWUCYlBDG3b0EcN1Ushd3hpE="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 
 </body>
