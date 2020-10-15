@@ -45,7 +45,6 @@ h4 {
 
 img {
   width: 600px;
-  margin: 0 auto;
   display: block;
   width: 100%;
 }
@@ -133,29 +132,26 @@ a:active {
 }
 
 .logo {
-  max-width: 80px;
+  max-width: 40px;
+  padding-top: 4px;
 }
 
 header {
   background-color: #fe6860;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 10px;
   position: fixed;
   width: 100%;
   box-shadow: 0px 9px 10px -1px rgba(88, 52, 50, 0.31);
 }
 
 main {
-  padding-top: 88px;
+  padding-top: 44px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -164,6 +160,27 @@ nav>ul>li>a {
   font-weight: 700;
   color: #ffffff !important;
   text-decoration: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+  padding-bottom: 10px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
 .black-border {
@@ -328,6 +345,22 @@ Medium devices (640px and larger)
     float: right;
   }
 
+nav>ul {
+  margin: 1em 0;
+}
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li: last-child {
+  display: none;
+}
+
   img {
     margin: unset;
     display: inline-block;
@@ -336,6 +369,11 @@ Medium devices (640px and larger)
   body {
     font-size: 18px;
   }
+
+.logo {
+  max-width: 80px;
+  padding-top: 10px;
+}
 
   .hero span {
     display: block;
@@ -401,32 +439,31 @@ Medium devices (640px and larger)
     padding: 10px 15px;
   }
 
-ul.borders-out a:before, ul.borders-out a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #FFF;
-  content: "";
-  opacity: 0;
-  transition: all 0.3s;
-}
+  ul.borders-out a:before, ul.borders-out a:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+  }
 
-ul.borders-out a:before {
-  top: 0px;
-  transform: translateY(10px);
-}
+  ul.borders-out a:before {
+    top: 0px;
+    transform: translateY(10px);
+  }
 
-ul.borders-out a:after {
-  bottom: 0px;
-  transform: translateY(-10px);
-}
+  ul.borders-out a:after {
+    bottom: 0px;
+    transform: translateY(-10px);
+  }
 
-ul.borders-out a:hover:before, ul.borders-out a:hover:after {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
+  ul.borders-out a:hover:before, ul.borders-out a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 /* ==============================
