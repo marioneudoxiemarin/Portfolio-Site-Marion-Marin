@@ -12,8 +12,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6;
-  color: #4a4a4a
+  line-height: 2;
+  color: #4a4a4a;
 }
 
 h1, h2, h3, h4 {
@@ -21,19 +21,19 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 1.75em;
+  font-size: 2.5em;
   font-weight: 700;
   text-align: center;
 }
 
 h2 {
-  font-size: 1.35em;
+  font-size: 2em;
   font-weight: 700;
   text-align: center;
 }
 
 h3 {
-  font-size: 1.15em;
+  font-size: 1.45em;
   font-weight: 700;
 }
 
@@ -47,6 +47,10 @@ img {
   width: 600px;
   display: block;
   width: 100%;
+}
+
+p {
+  margin-bottom: 60px;
 }
 
 a {
@@ -114,7 +118,7 @@ a:active {
   border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .button.cv:hover {
@@ -145,7 +149,7 @@ header {
 }
 
 main {
-  padding-top: 44px;
+  padding-top: 50px;
 }
 
 nav>ul {
@@ -212,6 +216,10 @@ footer {
   margin-top: 30px;
 }
 
+.introText {
+  margin-top: 80px;
+}
+
 .skillsToolsPP {
   margin: auto;
   width: 30%;
@@ -248,11 +256,12 @@ footer {
 }
 
 .projects h2 {
-  padding-top: 35px;
+  padding-top: 60px;
 }
 
 .projects h3 {
-  padding-top: 35px;
+  padding-top: 45px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -337,6 +346,11 @@ footer {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
+  main {
+    padding-top: 100px;
+  }
+
   header {
     text-align: unset;
   }
@@ -366,6 +380,10 @@ nav>ul {
     display: inline-block;
   }
 
+.imagecentered {
+  padding-top: 70px;
+}
+
   body {
     font-size: 18px;
   }
@@ -381,6 +399,7 @@ nav>ul {
 
   .col-md-6 {
     width: 50%;
+    text-align: center;
   }
 
   .col-md-4 {
@@ -418,8 +437,13 @@ nav>ul {
     padding-bottom: 40px;
   }
 
-  .width300-img {
-    max-width: 300px;
+.width-300px {
+  max-width: 300px;
+  text-align: center;
+}
+
+  .width400-img {
+    max-width: 400px;
   }
 
   .photo {
@@ -429,6 +453,10 @@ nav>ul {
   .width-800px {
     max-width: 800px;
     margin: 0 auto;
+  }
+
+  .width-950px {
+    max-width: 950px; 
   }
 
   .photo-container {
@@ -475,6 +503,20 @@ nav>ul {
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+  .imagecentered {
+    padding-top: 0px;
+  }
+
+  .story, .project {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .column {
+    margin-bottom: 0px;
+  }
+
   .col-lg-8 {
     width: 66.66%;
   }
@@ -491,8 +533,24 @@ Large devices (1024px or larger)
     width: 41.66%;
   }
 
+.col-lg-6 {
+  width: 50%;
+}
+
   .col-lg-12 {
     width: 100%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
   .container {
@@ -512,7 +570,7 @@ Large devices (1024px or larger)
   }
 
   .about-page h3 {
-    text-align: left;
+    text-align: center;
   }
 }
 
