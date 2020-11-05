@@ -8,7 +8,7 @@ Secondary Color(Light Pink):#ffe5e5;
 }
 
 body {
-  background-color: #F9EFEF;
+  background-color: #F7EFEF;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -77,8 +77,8 @@ a:active {
 .button {
   display: inline-block;
   text-decoration: none;
-  background-color: #fe6860;
-  color: #ffffff !important;
+  background-color: #FE5F57;
+  color: #2E2E2E !important;
   width: 100%;
   max-width: 320px;
   padding: 10px;
@@ -95,7 +95,7 @@ a:active {
 .button.contact {
   background-color: #4a4a4a;
   text-decoration: none;
-  color: #4a4a4a;
+  color: #ffffff !important;
   text-transform: uppercase;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
@@ -103,14 +103,14 @@ a:active {
 }
 
 .button.contact:hover {
-  background-color: #fe6860;
+  background-color: #FE5F57;
   color: #ffffff;
   margin: 10px;
 }
 
 .button.cv {
   display: inline-block;
-  background-color: #fe6860;
+  background-color: #FE5F57;
   color: #ffffff;
   font-weight: 400;
   padding: 10px;
@@ -141,7 +141,7 @@ a:active {
 }
 
 header {
-  background-color: #fe6860;
+  background-color: #FE5F57;
   padding: 10px 0 10px;
   position: fixed;
   width: 100%;
@@ -208,7 +208,7 @@ nav>ul>li>a {
 }
 
 footer {
-  background-color: #fe6860;
+  background-color: #FE5F57;
   color: #ffffff;
   text-align: center;
   font-size: 14px;
@@ -274,7 +274,7 @@ footer {
 }
 
 .hero {
-  background-color: #fe6860;
+  background-color: #FE5F57;
   color: #ffffff;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -375,6 +375,10 @@ nav>ul {
   display: inline-block;
 }
 
+.navtoggle.responsive nav {
+  padding: 0px;
+}
+
   img {
     margin: unset;
     display: inline-block;
@@ -456,7 +460,7 @@ nav>ul {
   }
 
   .width-950px {
-    max-width: 950px; 
+    max-width: 950px;
   }
 
   .photo-container {
